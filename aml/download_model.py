@@ -5,7 +5,7 @@ from azureml.core.authentication import ServicePrincipalAuthentication
 
 print(VERSION)
 
-with open("aml/config.json", "r") as f:
+with open("config.json", "r") as f:
     config = json.load(f)
 
 auth = ServicePrincipalAuthentication(
